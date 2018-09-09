@@ -20,8 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         return element;
       }
 
-    document.createElement(basicElement || 'div');
-
     //funkcja konstruująca klasę Column
     function Column(name) {
         var self = this;
