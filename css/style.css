@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+
+body { margin: 0 auto; width: 100%; max-width: 1200px; }
+
+.board { display: -ms-flexbox; display: flex; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; background-color: black; width: 100%; height: 100vh; }
+
+.board h1 { font-family: 'Lilita One', cursive; font-weight: 400; text-transform: capitalize; color: #fafafa; }
+
+.board .create-column { width: 200px; height: 50px; background-color: black; font-family: 'Lilita One', cursive; color: #fafafa; font-size: 20px; border: 3px outset #8395a7; border-radius: 15px; border-style: outset; cursor: pointer; display: block; text-align: center; }
+
+.board .create-column:hover { transform: scale(1.1, 1.1); transition: .2s ease-in; }
+
+.board .column-container { display: -ms-flexbox; display: flex; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: start; align-items: flex-start; -ms-flex-line-pack: justify; align-content: space-between; }
+
+.board .column-container .column { background-color: #fafafa; display: -ms-flexbox; display: flex; -ms-flex-flow: column; flex-flow: column; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: start; align-items: flex-start; min-width: 200px; height: auto; border: 5px inset #8395a7; border-radius: 15px; margin: 10px; }
+
+.board .column-container .column .column-title { font-family: 'Montserrat Alternates', sans-serif; font-weight: 600; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+
+.board .column-container .column .column-card-list { list-style-type: circle; font-style: italic; list-style-position: inside; font-family: 'Montserrat Alternates', sans-serif; font-weight: 400; }
+
+.board .column-container .column .btn-delete { border: none; font-family: 'Caveat Brush', cursive; line-height: 20px; -ms-flex-item-align: end; align-self: flex-end; background-color: transparent; color: red; font-size: 15px; }
+
+.board .column-container .column .btn-delete:hover { transform: scale(1.1, 1.1); transition: .2s ease-in; }
+
+.board .column-container .column .add-card { width: 160px; height: 50px; margin: 5px; background-color: black; font-family: 'Lilita One', cursive; color: #fafafa; font-size: 15px; border: 3px outset #8395a7; border-radius: 15px; cursor: pointer; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+
+.board .column-container .column .add-card:hover { transform: scale(1.1, 1.1); transition: .2s ease-in; }
+
+.board .column-container .card { display: -ms-flexbox; display: flex; -ms-flex-flow: column; flex-flow: column; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: start; align-items: flex-start; margin: 5px; min-width: 150px; height: auto; border-style: none none outset none; border-color: #8395a7; background-color: #fafafa; border-width: 0 0 3px 0; }
+
+.board .column-container .card .card-description { font-family: 'Montaga', serif; font-size: 16px; font-style: italic; }
+
+.board .column-container .card .btn-delete { border: none; font-family: 'Caveat Brush', cursive; line-height: 20px; -ms-flex-item-align: end; align-self: flex-end; background-color: transparent; color: red; font-size: 15px; }
+
+.board .column-container .card .btn-delete:hover { transform: scale(1.1, 1.1); transition: .2s ease-in; }
