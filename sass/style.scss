@@ -62,11 +62,11 @@ $grey: rgb(131, 149, 167);
         .column {
             background-color: $white;
             display: flex;
-            flex-flow: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            min-width: 200px;
-            height: auto;
+           flex-flow: column;
+           justify-content: flex-start;
+           align-items: flex-start;
+            min-width: 300px;
+            min-height: 300px;
             border: 5px inset $grey;
             border-radius: 15px;
             margin: 10px;
@@ -76,11 +76,15 @@ $grey: rgb(131, 149, 167);
                 align-self: center;  
             }
             .column-card-list {
-                list-style-type: circle;
+                list-style-type: none;
                 font-style: italic;
-                list-style-position: inside;
                 font-family: 'Montserrat Alternates', sans-serif;
                 font-weight: 400;
+                display: block;
+                padding: 0;
+                margin: 0;
+                width: 90%;
+                min-height: 50px;
             }
             .btn-delete {
                 border: none;
@@ -96,6 +100,7 @@ $grey: rgb(131, 149, 167);
                 }  
             }
             .add-card {
+                align-self: flex-end;
                 width: 160px;
                 height: 50px;
                 margin: 5px;
@@ -120,8 +125,8 @@ $grey: rgb(131, 149, 167);
             justify-content: flex-start;
             align-items: flex-start;
             margin: 5px;
-            min-width: 150px;
-            height: auto;
+            width: 100%;
+            min-height: 100px;
             border-style: none none outset none;
             border-color: $grey;
             background-color: $white;
