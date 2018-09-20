@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         this.id = randomString();
         this.name = name;
-        this.element = generateTemplate('column-template', { name: this.name });
+        this.element = generateTemplate('column-template', { id: this.id, name: this.name });
 
         //podpinanie zdarzenia - kasowanie kolumny po kliknięciu w przycisk i dodawania karteczki
         this.element.querySelector('.column').addEventListener('click', function (event) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         name: 'Kanban Board',
         addColumn: function(column) {
             this.element.appendChild(column.element);
-            initSortable(column.id); //About this feature we will tell later
+            initSortable(column.id); 
         },
         element: document.querySelector('#board .column-container')
     };
